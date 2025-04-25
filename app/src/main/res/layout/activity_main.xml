@@ -5,13 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF5F9"
+    android:background="#FDF3F7"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp"
     tools:context=".MainActivity">
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,73 +18,71 @@
         android:textColor="#09090B"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-
     <ImageView
         android:id="@+id/mLogo"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginBottom="24dp"
-        android:src="@drawable/logo_bank" />
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/bank_pink" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:boxBackgroundMode="outline"
-        android:boxCornerRadiusBottomStart="24dp"
-        android:boxCornerRadiusBottomEnd="24dp"
-        android:boxCornerRadiusTopEnd="24dp"
-        android:boxCornerRadiusTopStart="24dp">
+        android:hint="Digite seu e-mail:"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="#23DB47A1"
+        app:boxStrokeColor="#9D005D"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/mEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="#F079A2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:boxBackgroundMode="outline"
-        android:boxCornerRadiusTopStart="24dp"
-        android:boxCornerRadiusTopEnd="24dp"
-        android:boxCornerRadiusBottomStart="24dp"
-        android:boxCornerRadiusBottomEnd="24dp">
-
+        android:layout_marginTop="12dp"
+        android:hint="Senha:"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="#23DB47A1"
+        app:boxStrokeColor="#9D005D"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/mSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#E2F079A2"/>
     </com.google.android.material.textfield.TextInputLayout>
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Esqueceu a senha?"
-        android:textColor="#0066cc" />
-
+        android:textColor="#673AB7" />
     <Button
         android:id="@+id/mLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#F8FB91B5"
-        android:text="Log in" />
-
+        android:backgroundTint="#9D005D"
+        android:text="Log in"
+        android:textColor="#FFFFFF" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Cadastre-se"
-        android:textColor="#0066cc" />
-
-
+        android:textColor="#673AB7" />
 </LinearLayout>
